@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "맑은 고딕", MalgunGothic, arial, sans-serif;
+  font-size: 16px;
+  color: #666;
+}
+
+.clear::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.item {
+  width: 400px;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+
+.detail {
+  display: none;
+  text-align: left;
+  line-height: 2em;
+  font-size: 20px;
+}
+
+.detail h2 {
+  margin: 20px auto;
+}
+
+.detail p {
+  line-height: 1.8em;
+  margin-bottom: 2rem;
+}
+
+button {
+  font-size: 14px;
+  padding: 0.8em;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+
+.over {
+  position: absolute;
+  bottom: 15px;
+  left: 10px;
+}

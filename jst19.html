@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jst19</title>
+</head>
+<body>
+  <script>
+/*     const add = function(a,b) {
+        return sum= a+b;
+    }
+
+    document.write(typeof(add))
+    document.write('<br>')
+
+    var sum = add (10,20)
+    document.write(sum)
+    document.write('<br>')
+    document.write(typeof(add()))
+    document.write('<br>')
+    document.write(add(20,20));
+    document.write('<br>')
+    document.write(add(50,50)); */
+    
+//    일반적 함수선언   ( 함수명: abc)
+      function abc (a,b) {
+        result = a+b;
+        return result;
+      }
+      abc(500,500); 
+      document.write(result);
+      document.write('<br>')
+      
+//함수명 abc
+      function abc (a,b) {
+        result11 = a+b;
+        return result11;
+      }
+      abc(10,200)
+      document.write(result11);
+      document.write('<br>')
+      document.write('<br>')
+
+
+// 함수에서 나온 값을 변수 result22 에 할당시킨다. 
+
+      let result22 = function (a,b){
+        result22 = a+b;
+        return
+      }
+      document.write(typeof(result22))
+
+      result22(500,200)   // result 함수 처럼 실행시킨다. 
+      document.write(result22)
+      document.write(typeof(result22))
+
+
+
+//  즉시실행함수 
+/*  함수를 정의함과 동시에 실행하는 함수 
+    즉시 실행함수는 변수에 할당할 수 있고
+    함수에서 반환하는 값을 변수에 할당할 수도 있음 */
+    
+    var result = (function(a,b){  //매개변수 
+    return a+b;
+    }(100,200));  // 인수
+
+    document.write(result);
+    document.write('<br>');
+
+    
+//  화살표 함수
+/*  ES6이후 버전에서 사용한다. 
+    함수 선언을 간단하게 작성
+    익명함수, 즉시실행함수에서 사용한다. */
+
+      const hi00 = function(){
+        return '안녕하세요?'
+      }
+//  　  document.write(hi00)
+      const hi11 = () => {return '안녕하세요' }
+      const hi22 = () => '안녕하세요'
+
+
+//    일반적 함수선언
+
+      const hi100 = function(){
+        return '안녕하세요?'
+      }
+
+//    화살표 함수선언
+      const hi200 = () => {return '안녕하세요?'}
+      const hi300 = () => '안녕하세요?'
+
+
+//    함수선언
+      const aaa = function(a,b){
+            return a+b;
+      }
+//    화살표 함수
+      const bbb = (a,b) => {return a+b; }
+      const ccc = (a,b) =>  a+b;
+      document.write(ccc);
+      document.write('<br />')
+
+//    일반함수선언
+      const ddd = function(a,b){
+        result = a+b; 
+        return result;
+      }
+      ddd(10,20)
+      document.write(result);
+      document.write('<br />')
+      document.write('<br />')
+
+//    화살표
+      const eee = (a,b) => result = a+b; result; 
+
+
+//    즉시실행함수 
+      var fff =(function(a,b){
+        result = a+b; 
+        return result;
+      }(10,20)); 
+
+      var fff =(function(a,b){
+        result = a+b; 
+        return result;
+      }(10,20)); 
+
+
+//     화살표함수 
+      var ggg = (a,b) => result = a+b; result; 
+      var result = ggg(100,20)
+      document.write(result);
+      document.write('<br>')
+
+
+
+
+
+
+</script> 
+
+</body>
+</html>

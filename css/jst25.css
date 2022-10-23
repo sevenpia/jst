@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+li {
+  list-style: none;
+}
+body {
+  font-family: "맑은 고딕", MalgunGothic, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #666;
+}
+
+/* .h3 {
+  visibility: hidden;
+}
+
+.h3 + p {
+  visibility: hidden;
+} */
+
+#detail {
+  border: 5px solid #00f;
+}

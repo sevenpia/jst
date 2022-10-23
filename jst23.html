@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jst23</title>
+</head>
+<body>
+  <!-- 내장 객체만들기   -->
+  <script>
+  var tv = new Object;    //  객체를 만들고 변수 tv가 참조한다.  객체만들기 (new Object)
+  var now = new Date;
+
+  tv.width = '30인치';
+  tv.height ='25cm'; 
+  tv.weight = '10kg';
+  tv.color = 'black';
+  tv.off = function (){ document.write ('전원off', '<br >')}
+
+  document.write(tv.width, '<br>');
+  document.write(tv.height, '<br>');
+  document.write(tv.weight, '<br>', '<br>','<br>','<br>','<br>');
+  document.write(tv.color, '<br>');
+  document.write(tv.color, '<br>','<br>',tv.weight, '<br>','<br>', 'happy','<br>', '<br>');
+
+  tv.off()
+
+</script>  
+
+
+  
+</body>
+</html>

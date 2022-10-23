@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>이벤트 처리하기</title>
+	<link rel="stylesheet" href="css/domevent.css">
+</head>
+<body>
+	<div id="container">
+		<h2>안녕하세요.</h2>
+		<img id="pic" src="images/girl.png"  onclick="changePic()"" alt="">
+	</div>
+
+	<!--  <script src="js/domevent.js"></script> -->
+<script>
+
+	var pic = document.querySelector('#pic')
+	console.log('pic 에 들어있는 내용은' + pic + '이다');
+		console.log(pic);
+		console.log(typeof(pic));
+		var hh = document.querySelector('h2')
+
+		console.log(hh);
+		console.log(typeof(hh));
+
+	function changePic() {
+		var pic = document.querySelector('#pic')
+/*	console.log('pic 에 들어있는 내용은' + a + '이다');
+		console.log(a); */
+		pic.src='images/boy.png'
+
+	hh.style.color='#f00'
+
+
+	}
+</script>
+
+
+</body>
+</html>

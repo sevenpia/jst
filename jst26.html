@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jst26</title>
+  <style>
+  .container{
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid #00f;
+
+}
+  .container img {
+    display: block;
+    border: 1px solid #00f;
+    text-align: center;
+    margin: 0 auto;
+  }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>클릭하면 이미지가 바뀝니다. </h2>
+    <img src="images/girl.png" alt="" onclick="changePic()">
+  </div>
+
+  <script>
+    var pic = document.querySelector('img')
+    console.log(pic)
+
+    function changePic(){
+    var pic = document.querySelector('img')
+    var hh= document.querySelector('h2')
+
+    pic.src= 'images/boy.png'
+    // hh.style.cssText= "padding: 1em; background-color: #0f0; color=#fff"
+    hh.style.color ="#f00"
+    hh.style.fontWeight ="normal"
+
+  }
+
+  </script>
+
+</body>
+</html>
