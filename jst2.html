@@ -9,17 +9,18 @@
 <body>
     <h1>배열만들기</h1>
     <h2>getElementsByClassName() 연습</h2>
-    <div class="example">Element1 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+    <div class="example">Element1 aaaaaaaaaaa</div>
     <div class="example">Element2</div>
 
 
     <script>
         const collection = document.getElementsByClassName("example");
+        console.log(collection);
         collection[0].innerHTML = "좋은 아침";
         collection[0].style.color = "red";
         collection[1].innerHTML = "Good morning";
         collection[1].style.color = 'yellow';
-        collection[1].style.cssText ='color:blue; background-color: yellow; font-weight:bold; padding: 1.5em;'
+        collection[1].style.cssText = 'color:blue; background-color: yellow; font-weight:bold; padding: 1.5em;'
 
     </script>
 </body>

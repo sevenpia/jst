@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+body {
+  font-family: "맑은 고딕", MalgunGothic, Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  width: 900px;
+  margin: 0 auto;
+}
+
+ul,
+li {
+  line-height: 1.5em;
+}
+
+.mt30 {
+  font-size: 33 px;
+  font-weight: bold;
+  margin-top: 50px;
+  list-style: none;
+}

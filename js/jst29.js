@@ -9,7 +9,7 @@ var heading = document.getElementById('heading')
 } */
 
 
-heading.addEventListener('mouseenter', function () {
+heading.addEventListener('click', function () {
   this.style.color = "rgba(255,10,100,0.6)"
   this.style.fontSize = "4em"
 })

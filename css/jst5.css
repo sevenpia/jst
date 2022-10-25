@@ -46,6 +46,11 @@ p {
   animation-duration: 0.3s;
 }
 
+.wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+
 @-webkit-keyframes slidein {
   from {
     margin-left: 100%;
@@ -77,4 +82,15 @@ p {
     margin-left: 0%;
     width: 100%;
   }
+}
+
+.mt50 {
+  margin-top: 50px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.red {
+  color: #f00;
+  font-size: 22px;
 }
