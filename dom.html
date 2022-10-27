@@ -6,6 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/dom.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+
   <title>객체의 종류</title>
 </head>
 
@@ -14,20 +18,63 @@
     <p class="mt50"></p>
 
     <pre>
-    <span class="w400">★ 내장객체 </span> : Date 객체, Math객체, Stirng객체 , Number 객체, 
+    <span class="w400 "> [ 객체의 종류 ] </span>
 
-    ex) Number 객체 :   var c = 2 + 3;
-    ex) String 객체 :   var d = "홍길동"
+    ★ 내장객체
+    ★ 브라우저 객체 
+    ★ 문서객체모델 (DOM)
+    ★ 사용자정의 객체 
+
+    ======================================================================================
+
+    <span class="w400">★ 내장객체 </span> : Stirng객체 , Array 객체, Date 객체, Math객체 
+    
+    String객체 :  문자열을 다룬다.       문자열에서 사용할 수 있는 속성과 메서드가 정의되어 있다.
+    Array 객체 :  배열 자료형을 다룬다.
+    Date 객체 :   날짜와 시간을 다룬다.
+    Math 객체 :   수학 수식을 다룬다.
+ 
+
+    ex) String 객체 :   var c = "홍길동"
+                        c.length  문자열의 길이를 반환합니다. (속성 length를 사용했다.)
+
+    ex) Array  객체 :   var d = [10,20,30]
     ex) Date  객체 :    var today = New Date("2022-10-31");
-    ex) Math  객체 :    
+    ex) Math  객체 :    Math.max(10, 120, 30, 50, 20)
+
+
 
     <span class="w400">★ 브라우저 객체 </span>:  window, screen, location, navigator, 
-    브라우저 객체의 메소드 : open, close, alert, 
 
-    ex) window.open();
+    window 객체:      최상위 객체이다. 
+    document 객체:    웹 문서와 관련 있는 기능이 모여 있다. 
+    location 객체:    현재 페이지의 URL 정보가 담겨 있다. 
+    history 객체 :    방문 기록 정보가 담겨 있다. 
+    navigator 객체:   웹 브라우저의 정보가 담겨 있다. 
+    screen 객체:      방문자의 화면 정보를 담고 있다. 
+
+
     ex) window.alert();
+    ex) window.prompt();
+    ex) window.open();
+    ex) window.close();
 
 
+  <span class="impo1"> [ window 객체의 중요 메서드 ] </span>
+
+    alert()             알림창을 표시합니다.
+    confirm()           확인창을 표시합니다.
+    prompt()            입력창을 표시합니다.
+    open()              새로운 웹 브라우저 창을 엽니다.
+    close()             웹 브라우저 창을 닫습니다.
+    setTimeout()        일정 시간(ms) 뒤에 콜백 함수를 한 번만 실행합니다.
+    setInterval()       일정 시간(ms)마다 콜백 함수를 반복적으로 실행합니다.
+    clearInterval       setInterval() 메서드로 반복 실행되는 함수를 중지합니다.
+    scrollTo()          웹 브라우저의 스크롤을 특정 위치만큼 이동합니다.
+    scrollBy()          웹 브라우저의 스크롤을 현재 위치에서 상대적 위치로 이동합니다.
+
+
+    
     <span class="w400">★ DOM </span>:     Document, 모든 요소들.. 
     (Document Object Model) : 
 
@@ -36,7 +83,7 @@
     ex)
     ex)
     
-    <span class="w400">★ 시용자정의 객체 </span>: 
+    <span class="w400">★ 사용자정의 객체 </span>: 
 
     ex)
     ex)
