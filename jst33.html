@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .wrap {
+      font-size: 1.5em;
+      width: 800px;
+      margin: 30px auto;
+      border: 5px solid #eee;
+      padding: 30px;
+    }
+
+    .tit {
+      border: 2px solid #999;
+      padding: 1em;
+      color: #666 !important;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    #apple {
+      padding: 1em;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <div class="tit">getElementById 연습 </div>
+
+    <div id="apple">
+      나는 사과다..
+    </div>
+
+
+    <div class="tit">getElementsByTagName 연습 </div>
+
+    <p>123 happyday</p>
+    <p>123</p>
+    <p>123</p>
+    <p>123</p>
+    <p>123</p>
+
+    <p class="tit"> 구구단</p>
+
+
+    <script>
+
+      var apple = document.getElementById("apple")
+      console.log(apple);
+      apple.style.color = "red"
+
+      var para = document.getElementsByTagName('p');
+      console.log(para)
+
+      para[0].style.color = "red";
+      para[1].style.color = "red";
+      para[2].style.color = "red";
+      para[3].style.color = "red";
+      para[4].style.color = "red";
+
+      // for (let i = 1; i < para.length; i++) {
+      //   para[i].style.color = "red";
+      // }
+
+
+      //  var a = prompt('숫자를 입력해주세요');
+      //  console.log(a);
+
+      // 구구단 
+
+      for (let i = 2; i < 10; i++) {
+
+        // str = String(i)
+        // console.log(str)
+
+        document.write(i + "단 <br>");
+        for (let j = 1; j < 10; j++) {
+          var sum = i * j;
+          // str[i].style.color = "red";
+
+          document.write(i + "*" + j + "=" + sum + "<br>");
+        }
+        document.write("<br>");
+      }
+
+
+    </script>
+  </div>
+
+</body>
+
+</html>

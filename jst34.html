@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>문서객체 요소에 스타일 주기</title>
+  <style>
+    .gbox {
+      border: 3px solid #ccc;
+      padding: 1.5em;
+    }
+  </style>
+</head>
+
+<body>
+
+  <p class="gbox">문서 객체 요소에 스타일 주기</p>
+  <div id="apple">
+    <p> 나는 사과다.. </p>
+  </div>
+
+  <pre>
+  자바스크립트 문서에서 
+  문자열아니, 숫자에 스타일 속성을 주는 것이 아니다. 
+  html 요소로 추출된 요소에 스타일 속성을 줄 수 있다.
+  </pre>
+
+  <script>
+    var apple = document.getElementById("apple")
+    // console.log(apple)
+    apple.style.color = "red"
+    apple.style.cssText = "padding: 1em; color: blue; font-size: 1.5em;text - decoration: underline; font-weight:bold;"
+
+    // 숫자나 문자열 데이터에 스타일을 입히는 것이 아니다. 
+    i = 7;
+    console.log(typeof (i))
+    var str = String(i);
+    console.log(typeof (str))
+
+    /* 자바스크립트 문서에서 
+    문자열아니, 숫자에 스타일 속성을 주는 것이 아니다. 
+    html 요소로 추출된 요소에 스타일 속성을 줄 수 있다.*/
+
+    a = "한국";
+    // a.style.color = "red";
+
+
+  </script>
+</body>
+
+</html>

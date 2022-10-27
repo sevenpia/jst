@@ -1,6 +1,11 @@
 // 글을 클릭하면 alert 창을 띄운다.
-var ready = document.querySelectorAll(".ready")
+/* var ready = document.querySelectorAll(".ready")
 console.log(ready)
+ */
+
+var ready = document.querySelectorAll(".ready a")
+console.log(ready)
+
 
 /* ready[0].addEventListener("click", function (ev) {
   ev.preventDefault();

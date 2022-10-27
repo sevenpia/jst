@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      height: 3000px;
+    }
+
+    .aa {
+      position: relative;
+      width: 100%;
+      height: 600px;
+      background-color: #0f6bc2;
+      color: #fff;
+
+    }
+
+    .ttt {
+      position: absolute;
+      top: 180px;
+      left: 100px;
+      font-weight: bold;
+      font-size: 5em;
+      opacity: 0;
+      margin-left: -300px;
+      opacity: 0;
+      animation: move 2s forwards;
+      color: #fff;
+    }
+
+    @keyframes move {
+      0% {
+        margin-left: -300px;
+        opacity: 0;
+      }
+
+      100% {
+        margin-left: 200px;
+        opacity: 1;
+      }
+    }
+
+    @keyframes reset {
+      0% {
+        margin-left: 200px;
+        opacity: 1;
+      }
+
+      100% {
+        margin-left: -300px;
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="aa">안녕, 나는 오늘도 공부를 한다.
+    나는 오늘도 공부를 한다.</div>
+  <p class="ttt"> 여기로 슬라이드!!</p>
+
+
+
+  <script>
+    var a = document.documentElement.scrollHeight;
+    var b = document.documentElement.offsetHeight;
+
+    document.write(a + "<br>");
+    document.write(b);
+
+
+    var mm = document.getElementsByClassName("ttt");
+    console.log(mm);
+
+
+    window.addEventListener('scroll', function () {
+      var c = window.scrollY;
+      console.log(window.scrollY);
+      if (c < 220) {
+        mm[0].style.animation = "move 1.5s  ease-out forwards"
+      } else {
+        mm[0].style.animation = "reset 1.8s"
+      }
+
+    })
+
+
+
+
+
+  </script>
+
+</body>
+
+</html>
