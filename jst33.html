@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/jst33.js" defer></script>
   <title>Document</title>
   <style>
     .wrap {
@@ -25,7 +26,26 @@
 
     #apple {
       padding: 1em;
+    }
 
+
+    #btn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 100px;
+      background-color: #1587c4;
+      padding: 0.8em;
+      border-radius: 5px;
+      font-size: 1.3em;
+      cursor: pointer;
+      display: none;
+      border: 0;
+      color: #fff;
+    }
+
+    #btn.visible {
+      display: block;
     }
   </style>
 </head>
@@ -56,6 +76,7 @@
       var apple = document.getElementById("apple")
       console.log(apple);
       apple.style.color = "red"
+      apple.style.cssText = "font-size:2em ; color:#00f; padding: 1.2em;margin-top: 1rem;"
 
       var para = document.getElementsByTagName('p');
       console.log(para)
@@ -84,16 +105,16 @@
         document.write(i + "단 <br>");
         for (let j = 1; j < 10; j++) {
           var sum = i * j;
-          // str[i].style.color = "red";
+          // str[i].style.color = "red";  
 
           document.write(i + "*" + j + "=" + sum + "<br>");
         }
         document.write("<br>");
       }
-
-
     </script>
+
   </div>
+  <button id="btn">Top</button>
 
 </body>
 
