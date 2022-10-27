@@ -10,6 +10,17 @@ a {
   text-decoration: none;
 }
 
+a:link,
+a:visited {
+  color: #333;
+}
+a:hover {
+  color: coral;
+}
+a:active.a:focus {
+  color: cyan;
+}
+
 ul {
   width: 900px;
   margin: 0 auto;
@@ -17,7 +28,11 @@ ul {
 
 ul,
 li {
-  line-height: 1.5em;
+  line-height: 1em;
+}
+
+li {
+  line-height: 2em;
 }
 
 .mt30 {
@@ -30,8 +45,9 @@ li {
 
 .gbox {
   border: 5px solid #ccc;
-  padding: 20px;
+  padding: 1rem;
   margin-left: -80px;
   margin-bottom: 15px;
   width: 800px;
+  line-height: 2rem;
 }
