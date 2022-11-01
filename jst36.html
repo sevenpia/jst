@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>함수</title>
+  <style>
+    pre {
+      width: 900px;
+      border: 3px solid #ccc;
+      margin: 30px auto;
+      font-size: 1.5em;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <pre>
+
+  1. 함수명이 있는 함수: 화살표함수로 만들 수 있다.
+      일반적 함수만드는 방법 : funciton 함수명 (매개변수,매개변수){할일 return}
+      화살표함수 만드는 방법 (함수명이 있는 함수) : 간략하게 줄여서 만드는 방법이다.
+  
+  2. 함수명이 없는 함수 (익명함수): 결과값을 변수에 바로 할당하여 출력한다.
+      var 변수명 = (function(매개변수,매개변수){할일}(인자, 인자))
+
+
+★★★★★★★★ 함수명이 있는 함수 (함수명 있음) ★★★★★★★★★★
+
+  (연습1) 일반적 함수 / 함수명: abc
+
+  let c;
+    function abc(a, b) {
+    c = a + b;
+    return
+    }
+  abc(10, 20);
+  document.write(c)
+
+
+  (연습2)일반적 함수만들기 
+  함수명: multiFunc
+
+  let multiValue;
+    function multiFunc(a, b) {
+    multiValue = a * b;
+    return
+  }
+  multiFunc(100, 200);
+  document.write(multiValue)
+
+
+
+  ★★★★★★★★ 화살표함수 (함수명 있음)★★★★★★★★★★★
+
+  화살표함수 만들기
+    함수명이 있으므로 코딩양이 많으므로 줄여서 화살표 함수를 만든다.
+    함수명 = (매개변수, 매개변수) => {할일 return}
+    함수실행(인자값을 넣는다.)후 변수에 저장하기
+    변수를 출력하기
+
+  (연습1) 함수명이 있는 함수는 화살표함수로 만들수 있다. 함수명 addNum
+
+  addNum = (a, b) => {
+    c = a + b;
+    return c;
+  }
+
+  var addtotal = addnum(200, 450)
+  document.write(`addtotla은 ${addtotal}`)
+
+
+
+  (연습2) 화살표함수 연습2 /  add는 함수명이다.
+
+  add = (a, b) => {
+    return a + b;
+  }
+  var addresult = add(800, 800)
+  document.write(addresult)
+
+
+  (연습3) 화살함수  / 함수명은 addFunc 이다.
+
+  var addFunc = (a, b) => {
+    return a + b;
+    }
+
+  var rst = addFunc(500, 600)
+  document.write(rst);
+
+
+
+
+  ★★★★★★★★ 익명함수 (함수명 없음)★★★★★★★★★★★
+
+
+  (연습1) 익명함수  : 함수명이 없이 변수에 바로 할당한다. / abTotal는 변수명이다.
+
+  let abTotal = (function (a, b) {
+    let result = a + b;
+    return result;
+    }(5000, 5000));
+
+  document.write(abTotal);
+
+
+
+  (연습2)익명함수 : 함수명없이 변수에 바로 할당한다. / ccc는 변수명이다.
+
+  let cc = function (a, b) {
+    return a + b;
+    }(300, 200);
+  document.write(cc)
+
+
+
+  (연습3) 익명함수 연습3: 함수명없이 변수에 바로 할당한다. / result는 변수명이다.
+
+  var result = (function (a, b) { //매개변수
+  return a + b;
+  }(500, 300)); // 인수
+
+  document.write(result)
+
+</pre>
+
+  <script>
+
+    // 1. 함수명이 있는 함수: 화살표함수로 만들 수 있다.
+    // 일반적 함수만드는 방법 : funciton 함수명 (매개변수,매개변수){할일 return}
+    // 화살표함수 만드는 방법 (함수명이 있는 함수) : 간략하게 줄여서 만드는 방법이다.
+
+
+    // 2. 함수명이 없는 함수 (익명함수): 결과값을 변수에 바로 할당하여 출력한다.
+    //var 변수명 = (function(매개변수,매개변수){할일}(인자, 인자))
+
+
+
+    //★★★★★★★★ 함수명이 있는 함수  ★★★★★★★★★★★
+    // 일반적 함수만들기 연습1 
+    // 함수명: abc
+
+    let c;
+    function abc(a, b) {
+      c = a + b;
+      return
+    }
+    abc(10, 20);
+    document.write(c)
+
+
+    document.write('<br>')
+    document.write('<br>')
+
+
+
+    // 일반적 함수만들기 연습2 
+    // 함수명: multiFunc
+
+    let multiValue;
+    function multiFunc(a, b) {
+      multiValue = a * b;
+      return
+    }
+    multiFunc(100, 200);
+    document.write(multiValue)
+
+    document.write('<br>')
+    document.write('<br>')
+
+
+    // 함수명이 있는 함수는 화살표함수로 만들수 있다. 
+    // abc = (a, b) => {
+    //   c = a + b;
+    //   return c;
+    // }
+
+
+    addNum = (a, b) => {
+      c = a + b;
+      return c;
+    }
+
+    var addtotal = addNum(200, 450)
+    document.write(`addtotla은 ${addtotal}`)
+
+    document.write('<br>')
+    document.write('<br>')
+
+    // 화살표함수 만들기 
+    //함수명이 있으므로 코딩양이 많으므로 줄여서 화살표 함수를 만든다. 
+
+    // 함수명 = (매개변수, 매개변수) => {할일 return} 
+    // 함수실행(인자값을 넣는다.)후 변수에 저장하기 
+    // 변수를 출력하기 
+    // add()는 함수명이다.
+
+
+    //화살표함수 연습2
+    //add는 함수명이다. 
+
+    add = (a, b) => {
+      return a + b;
+    }
+
+    var addresult = add(800, 800)
+    document.write(addresult)
+
+
+    document.write('<br>')
+    document.write('<br>')
+
+
+    //화살함수 연습3
+    //함수명은 addFunc 이다. 
+
+    addFunc = (a, b) => {
+      return a + b;
+    }
+    var rst = addFunc(500, 600)
+    document.write(`결과값은 ${rst}`);
+
+    document.write('<br>')
+    document.write('<br>')
+
+    //★★★★★★★★ 익명함수  ★★★★★★★★★★★
+    //익명함수 연습1 : 함수명이 없이 변수에 바로 할당한다. 
+    //abTotal는 변수명이다. 
+
+    let abTotal = (function (a, b) {
+      let result = a + b;
+      return result;
+    }(5000, 5000));
+
+    document.write('fff의 값은 ' + abTotal + '이다.');
+
+
+    document.write('<br>')
+    document.write('<br>')
+    document.write('<br>')
+
+
+    // 익명함수 연습2: 함수명없이 변수에 바로 할당한다. 
+    // ccc는 변수명이다. 
+
+    let cc = function (a, b) {
+      return a + b;
+    }(300, 200);
+    document.write(cc)
+
+    document.write('<br>')
+    document.write('<br>')
+
+
+    // 익명함수 연습3: 함수명없이 변수에 바로 할당한다. 
+    // result는 변수명이다. 
+
+    var result = (function (a, b) {  //매개변수 
+      return a + b;
+    }(500, 300));  // 인수
+
+    document.write(result)
+
+
+  </script>
+
+</body>
+
+</html>
