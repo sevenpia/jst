@@ -14,6 +14,12 @@
       font-size: 1.5em;
       padding: 20px;
     }
+
+    .red {
+      color: #f00;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
   </style>
 </head>
 
@@ -30,7 +36,7 @@
 
 ★★★★★★★★ 함수명이 있는 함수 (함수명 있음) ★★★★★★★★★★
 
-  (연습1) 일반적 함수 / 함수명: abc
+  <p class="red">(연습1) 일반적 함수 / 함수명: abc</p>
 
   let c;
     function abc(a, b) {
@@ -41,7 +47,7 @@
   document.write(c)
 
 
-  (연습2)일반적 함수만들기 
+  <p class="red"> (연습2)일반적 함수만들기 </p>
   함수명: multiFunc
 
   let multiValue;
@@ -53,6 +59,18 @@
   document.write(multiValue)
 
 
+  <p class="red">(연습3) 일반적 함수만들기 </p>
+  let rstab;
+  const ddd = function (a, b) {
+    rstab = a + b;
+    return rstab;
+  }
+
+  ddd(10, 20)
+  document.write('두수를 더한 값은 ' + rstab + '입니다.');
+
+
+
 
   ★★★★★★★★ 화살표함수 (함수명 있음)★★★★★★★★★★★
 
@@ -62,7 +80,7 @@
     함수실행(인자값을 넣는다.)후 변수에 저장하기
     변수를 출력하기
 
-  (연습1) 함수명이 있는 함수는 화살표함수로 만들수 있다. 함수명 addNum
+    <p class="red">(연습1) 함수명이 있는 함수는 화살표함수로 만들수 있다. 함수명 addNum</p>
 
   addNum = (a, b) => {
     c = a + b;
@@ -74,7 +92,7 @@
 
 
 
-  (연습2) 화살표함수 연습2 /  add는 함수명이다.
+  <p class="red">(연습2) 화살표함수 연습2 /  add는 함수명이다.</p>
 
   add = (a, b) => {
     return a + b;
@@ -83,7 +101,7 @@
   document.write(addresult)
 
 
-  (연습3) 화살함수  / 함수명은 addFunc 이다.
+  <p class="red">(연습3) 화살함수  / 함수명은 addFunc 이다.</p>
 
   var addFunc = (a, b) => {
     return a + b;
@@ -98,7 +116,7 @@
   ★★★★★★★★ 익명함수 (함수명 없음)★★★★★★★★★★★
 
 
-  (연습1) 익명함수  : 함수명이 없이 변수에 바로 할당한다. / abTotal는 변수명이다.
+  <p class="red">(연습1) 익명함수  : 함수명이 없이 변수에 바로 할당한다. / abTotal는 변수명이다.</p>
 
   let abTotal = (function (a, b) {
     let result = a + b;
@@ -109,7 +127,7 @@
 
 
 
-  (연습2)익명함수 : 함수명없이 변수에 바로 할당한다. / ccc는 변수명이다.
+  <p class="red">(연습2)익명함수 : 함수명없이 변수에 바로 할당한다. / ccc는 변수명이다.</p>
 
   let cc = function (a, b) {
     return a + b;
@@ -118,7 +136,7 @@
 
 
 
-  (연습3) 익명함수 연습3: 함수명없이 변수에 바로 할당한다. / result는 변수명이다.
+  <p class="red">(연습3) 익명함수 연습3: 함수명없이 변수에 바로 할당한다. / result는 변수명이다.</p>
 
   var result = (function (a, b) { //매개변수
   return a + b;
@@ -172,6 +190,20 @@
     document.write('<br>')
     document.write('<br>')
 
+
+    //  (연습3) 일반적 함수만들기
+    // ddd는 함수명이다. 
+    let rstab;
+    const ddd = function (a, b) {
+      rstab = a + b;
+      return rstab;
+    }
+
+    ddd(10, 20)
+    document.write('두수를 더한 값은 ' + rstab + '입니다.');
+
+    document.write('<br>')
+    document.write('<br>')
 
     // 함수명이 있는 함수는 화살표함수로 만들수 있다. 
     // abc = (a, b) => {
