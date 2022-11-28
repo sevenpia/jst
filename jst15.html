@@ -13,24 +13,37 @@
   <h1>객체생성하고 콘솔에 출력하기/ 변수 const 특징 </h1>
   <script>
 
+    // 객체생성:  {} 사용하여 객체생성하기 
     const 봄1 = {
       특징: '싱그로움',
       영어이름: 'spring',
       슬로건: '행복'
     }
 
-    console.log(typeof 봄1)
-    console.log(봄1)
+    /*     const 봄1 = {
+          특징: '싱그로움',
+          영어이름: 'spring',
+          슬로건: '행복',
+          다음계절은: '여름'
+        }
+     */
+    console.log('자료의 타입 : ' + typeof 봄1)
+    console.log('특징 : ' + 봄1.특징)
+    console.log('영어이름 : ' + 봄1.영어이름)
+    console.log('슬로건 : ' + 봄1.슬로건)
 
-    const 봄1 = {
-      특징: '싱그로움',
-      영어이름: 'spring',
-      슬로건: '행복',
-      다음계절은: '여름'
-    }
 
-    console.log(typeof 봄1)
-    console.log(봄1)
+    // 새로운 객체 생성 new 키워드 사용
+
+    const 봄2 = new Object;
+    봄2.특징 = '따뜻함'
+    봄2.영어이름 = 'spring2'
+    봄2.슬로건 = '따사로움'
+
+    console.log('자료의 타입 : ' + typeof 봄2)
+    console.log(봄2.특징)
+    console.log(봄2.영어이름)
+    console.log(봄2.슬로건)
 
   </script>
 
