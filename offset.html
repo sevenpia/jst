@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .wrap {
+      width: 800px;
+      height: 800px;
+      border: 1px solid #f00;
+    }
+
+    div {
+      margin-top: 200px;
+      margin-left: 100px;
+    }
+  </style>
+  <script>
+    $(document).ready(function () {
+      $("div").scroll(function () {
+        // console.log('scrollTop = ' + $("div").scrollTop() + " px");
+        // console.log('scrollY = ' + scrollY);
+      });
+
+      // offset().left:  부모박스 왼쪽거리부터 박스까지의 거리 
+      // offset().top:  부모박스 상단으로부터 박스까지의 거리 
+
+      console.log('offset().left = ' + $("div").offset().left + " px");
+      console.log('offset().top = ' + $("div").offset().top + " px");
+
+      $(window).scroll(function () {
+        // console.log('scrollTop = ' + $("div").scrollTop() + " px");
+        console.log('scrollTop = ' + $(this).scrollTop() + " px");
+        console.log('scrollY = ' + scrollY)
+      })
+    });
+  </script>
+
+</head>
+
+<body style="height: 3000px">
+  <div class="wrap">
+    <div style="border:1px solid black;width:300px;height:350px;overflow:auto">
+      This is some text. This is some text. This is some text. This is some text. This is some text. This is some text.
+      This is some text. This is some text. This is some text.
+      This is some text. This is some text. This is some text. This is some text. This is some text. This is some text.
+      This is some text. This is some text. This is some text.This is some text. This is some text. This is some text.
+      This is some text. This is some text. This is some text. This is some text. This is some text. This is some
+      text.This is some text. This is some text. This is some text. This is some text. This is some text. This is some
+      text. This is some text. This is some text. This is some text.This is some text. This is some text. This is some
+      text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some
+      text.This is some text. This is some text. This is some text. This is some text. This is some text. This is some
+      text. This is some text. This is some text. This is some text.This is some text. This is some text. This is some
+      text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some
+      text.This is some text. This is some text. This is some text. This is some text. This is some text. This is some
+      text. This is some text. This is some text. This is some text.</div><br>
+
+    <button>Return the vertical position of the scrollbar</button>
+    <p>Move the scrollbar down and click the button again.</p>
+  </div>
+</body>
+
+</html>

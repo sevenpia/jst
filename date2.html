@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #calendar {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 1.3em;
+      color: coral;
+      width: 300px;
+      padding: 30px;
+      border: 5px solid hotpink;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="calendar"></div>
+
+  <script>
+    /*     setInterval(() => {
+          var date = new Date();
+          let clock = document.getElementById('clock');
+          clock.innerHTML =
+            date.getFullYear() + "년" +
+            date.getMonth() + "월" +
+            date.getDate() + "일" +
+            date.getDay() + "요일"
+        }, 1000); */
+
+
+    var now = new Date();
+    let calendar = document.getElementById('calendar');
+
+    let day = now.getDay()
+    console.log(day);
+
+    switch (day) {
+      case 0:
+        day = "일"
+        break;
+      case 1:
+        day = "월"
+        break;
+      case 2:
+        day = "화"
+        break;
+      case 3:
+        day = "수"
+        break;
+      case 4:
+        day = "목"
+        break;
+      case 5:
+        day = "금"
+        break;
+      case 6:
+        day = "토"
+        break;
+    }
+
+    console.log(day);
+
+    calendar.innerHTML =
+      now.getFullYear() + "년 " +
+      now.getMonth() + "월 " +
+      now.getDate() + "일 " +
+      day + "요일"
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>date 3</title>
+  <style>
+    body {
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    #calendar {
+      width: 300px;
+      padding: 30px;
+      border: 5px solid #ccc;
+      margin: 30px auto;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="calendar"></div>
+
+  <script>
+    let now = new Date();
+    let year = now.getFullYear();
+    let month = now.getMonth()
+    let date = now.getDate()
+    let day = now.getDay()
+    switch (day) {
+      case 0:
+        day = "일"
+        break;
+
+      case 1:
+        day = "월"
+        break;
+      case 2:
+        day = "화"
+        break;
+      case 3:
+        day = "수"
+        break;
+      case 4:
+        day = "목"
+        break;
+      case 5:
+        day = "금"
+        break;
+      case 6:
+        day = "토"
+        break;
+    }
+
+
+    let cal = document.getElementById('calendar')
+
+    cal.innerHTML =
+      year + "년 " +
+      (month + 1) + "월 " +
+      date + "일 " +
+      day + "요일"
+
+
+
+  </script>
+
+</body>
+
+</html>
